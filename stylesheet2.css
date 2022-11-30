@@ -52,7 +52,7 @@
     align-items: center;
 }
 .item .name{
-    width: 250px;
+    width: 270px;
     font-size: 20px;
 }
 .item .value{
@@ -64,6 +64,6 @@
     color: blue;
 }
 .item .unit{
-    width: 65px;
+    width: 75px;
     text-align: right;
 }

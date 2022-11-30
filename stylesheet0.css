@@ -11,7 +11,7 @@ html, body, div, a, section{
 }
 :root{
     --page-height: 55cm;
-    --page-width: calc(var(--page-height) * 9 / 16);
+    --page-width: 34cm;
     
     --menu-height: 1.5cm;
     --menu-language-width: 5cm;
