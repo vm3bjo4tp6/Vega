@@ -1,0 +1,51 @@
+table, th, tr, td{
+    border: 1px solid black;
+    font-size: 20px;
+}
+table{
+    width: 100%;
+    margin: 10px 0;
+}
+table th{
+    background-color: blue;
+    color: white;
+}
+table td{
+    height: 24px;
+    padding: 6px 10px;
+}
+table tr td:nth-child(1){
+    text-align: center;
+}
+
+.theme{
+    margin: 30px 0;
+}
+.theme-title{
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: underline;
+}
+.index{
+    width: 60px;
+}
+.status{
+    width: 60px;
+}
+
+.button-group .button{
+    margin-right: 10px;
+    width: 96px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #1d1d1d;
+
+    background-color: #c2c2c2;
+    font-size: 30px;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

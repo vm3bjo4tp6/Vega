@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/cb6cecf6dd.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet0.css">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="page flex-column" id="Home-page">
+        <div class="menu-bar flex-row">
+            <div class="flex-row" id="menu">
+                <a href="01-Home-cn.html">
+                    <div class="button bgc-blue">首頁</div>
+                </a>
+                <a href="05-Manual-cn.html">
+                    <div class="button">手動</div>
+                </a>
+                <a href="02-1-KTIG-cn.html">
+                    <div class="button">設定</div>
+                </a>
+                <a href="03-IO-cn.html">
+                    <div class="button">IO</div>
+                </a>
+                <a href="04-ErrorMsg-cn.html">
+                    <div class="button">異常訊息</div>
+                </a>
+            </div>
+            <div class="flex-row" id="language">
+                <a href="01-Home-cn.html">
+                    <div class="button">中文</div>
+                </a>
+                <a href="01-Home.html">
+                    <div class="button">English</div>
+                </a>
+            </div>
+        </div>
+        <div class="status-bar flex-row">
+            <div class="indicator-label bgc-green">機台</div>
+            <div class="indicator-label bgc-green">K-TIG冷卻水</div>
+            <div class="indicator-label bgc-yellow">TIG冷卻水</div>
+            <div class="indicator-label bgc-green">PLASMA冷卻水</div>
+            <div class="indicator-label bgc-red">相機冷卻水</div>
+            <div class="indicator-label bgc-green">冷卻水溫度</div>
+        </div>
+        <div class="main-panel flex-column">
+            <div class="theme flex-row border" id="K-TIG">
+                <div class="camera"></div>
+                <div class="panel flex-column">
+                    <div class="theme-title">K-TIG</div>
+                    <div class="display-panel flex-column flex-wrap">
+                        <div class="item flex-row border-item">
+                            <div class="name">電流</div>
+                            <div class="value">600</div>
+                            <div class="unit">( A )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">電壓</div>
+                            <div class="value">20</div>
+                            <div class="unit">( V )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">冷卻水流量</div>
+                            <div class="value">3</div>
+                            <div class="unit">( L/Min )</div>
+                        </div>
+                    </div>
+                    <div class="control-panel flex-column">
+                        <div class="function-group flex-column">
+                            <div class="function-name">焊槍移動介面</div>
+                            <div class="direction-panel flex-row justtify-center">
+                                <div class="button">←</div>
+                                <div class="flex-column">
+                                    <div class="button">↑</div>
+                                    <div class="button">↓</div>
+                                </div>
+                                <div class="button">→</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theme flex-row border" id="TIG">
+                <div class="camera"></div>
+                <div class="panel flex-column">
+                    <div class="theme-title">TIG</div>
+                    <div class="display-panel flex-row flex-wrap">
+                        <div class="item flex-row border-item">
+                            <div class="name">電流</div>
+                            <div class="value">600</div>
+                            <div class="unit">( A )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">電壓</div>
+                            <div class="value">20</div>
+                            <div class="unit">( V )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">冷卻水流量</div>
+                            <div class="value">3</div>
+                            <div class="unit">( L/Min )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">送線速度</div>
+                            <div class="value">3</div>
+                            <div class="unit">( Cm/Min )</div>
+                        </div>
+                    </div>
+                    <div class="control-panel flex-column">
+                        <div class="function-group flex-column">
+                            <div class="function-name">影像來源</div>
+                            <div class="button-group flex-row">
+                                <div class="button bgc-green js-ratio-button">正常</div>
+                                <div class="button js-ratio-button">暗幕</div>
+                            </div>
+                        </div>
+                        <div class="function-group flex-column">
+                            <div class="function-name">功能啟動介面</div>
+                            <div class="button-group flex-row">
+                                <div class="button js-keep-button">TIG</div>
+                                <div class="button js-keep-button">脈波</div>
+                                <div class="button js-keep-button">擺弧</div>
+                                <div class="button js-keep-button">送線</div>
+                            </div>
+                        </div>
+                        <div class="function-group flex-column">
+                            <div class="function-name">焊槍移動介面</div>
+                            <div class="direction-panel flex-row justtify-center">
+                                <div class="button">←</div>
+                                <div class="flex-column">
+                                    <div class="button">↑</div>
+                                    <div class="button">↓</div>
+                                </div>
+                                <div class="button">→</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theme flex-row border" id="PLASMA">
+                <div class="camera"></div>
+                <div class="panel flex-column">
+                    <div class="theme-title">PLASMA</div>
+                    <div class="display-panel flex-row flex-wrap">
+                        <div class="item flex-row border-item">
+                            <div class="name">電流</div>
+                            <div class="value">600</div>
+                            <div class="unit">( A )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">電壓</div>
+                            <div class="value">20</div>
+                            <div class="unit">( V )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">冷卻水流量</div>
+                            <div class="value">3</div>
+                            <div class="unit">( L/Min )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">相機用冷卻水流量</div>
+                            <div class="value">3</div>
+                            <div class="unit">( L/Min )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">氣體流量</div>
+                            <div class="value">3</div>
+                            <div class="unit">( L/Min )</div>
+                        </div>
+                    </div>
+                    <div class="control-panel flex-column">
+                        <div class="function-group flex-column">
+                            <div class="function-name">功能啟動介面</div>
+                            <div class="button-group flex-row">
+                                <div class="button js-keep-button">PLASMA</div>
+                                <div class="button js-keep-button">脈波</div>
+                            </div>
+                        </div>
+                        <div class="function-group flex-column">
+                            <div class="function-name">焊槍移動介面</div>
+                            <div class="direction-panel flex-row">
+                                <!-- <div class="flex-column"> -->
+                                    <div class="button">↑</div>
+                                    <div class="button">↓</div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>

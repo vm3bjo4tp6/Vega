@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet0.css">
+    <link rel="stylesheet" href="stylesheet2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page flex-column" id="Setting-page">
+        <div class="menu-bar flex-row">
+            <div class="flex-row" id="menu">
+                <a href="01-Home-cn.html">
+                    <div class="button">首頁</div>
+                </a>
+                <a href="05-Manual-cn.html">
+                    <div class="button">手動</div>
+                </a>
+                <a href="02-2-TIG-cn.html">
+                    <div class="button  bgc-blue">設定</div>
+                </a>
+                <a href="03-IO-cn.html">
+                    <div class="button">IO</div>
+                </a>
+                <a href="04-ErrorMsg-cn.html">
+                    <div class="button">異常訊息</div>
+                </a>
+            </div>
+            <div class="flex-row" id="language">
+                <a href="02-2-TIG-cn.html">
+                    <div class="button">中文</div>
+                </a>
+                <a href="02-2-TIG.html">
+                    <div class="button">English</div>
+                </a>
+            </div>
+        </div>
+        <div class="status-bar flex-row">
+            <div class="indicator-label bgc-green">機台</div>
+            <div class="indicator-label bgc-green">K-TIG冷卻水</div>
+            <div class="indicator-label bgc-yellow">TIG冷卻水</div>
+            <div class="indicator-label bgc-green">PLASMA冷卻水</div>
+            <div class="indicator-label bgc-red">相機冷卻水</div>
+            <div class="indicator-label bgc-green">冷卻水溫度</div>
+        </div>
+        <div class="main-panel flex-column">
+            <div class="theme flex-row border" id="TIG">
+                <div class="panel flex-column">
+                    <div class="theme-title">TIG</div>
+                    <div class="panel flex-column">
+                        <div class="topic flex-column border">
+                            <div class="topic-title">點火系統參數</div>
+                            <div class="image">
+                                <img src="IgnitionChart.png" alt="" class="img" fill>
+                            </div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">起火電流(A1)</div>
+                                    <div class="value">100</div>
+                                    <div class="unit">( A )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">收尾電流(A2)</div>
+                                    <div class="value">200</div>
+                                    <div class="unit">( A )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">起火電流持續時間(T1)</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">收尾電流持續時間(T5)</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">電流上升時間(T2)</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">電流下降時間(T4)</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">判斷成功點火電流值</div>
+                                    <div class="value">500</div>
+                                    <div class="unit">( A )</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic flex-column border">
+                            <div class="topic-title">冷卻系統參數</div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">冷卻水流量警告值</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( L/Min )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">冷卻水流量危險值</div>
+                                    <div class="value">8</div>
+                                    <div class="unit">( L/Min )</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic flex-column border">
+                            <div class="topic-title">脈波參數</div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">脈波頻率</div>
+                                    <div class="value">60</div>
+                                    <div class="unit">( Hz )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">波電流</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( A )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">高頻持續時間</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">低頻持續時間</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic flex-column border">
+                            <div class="topic-title">擺弧參數</div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">擺弧寬度</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( mm )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">擺弧速度</div>
+                                    <div class="value">15</div>
+                                    <div class="unit">( mm/s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">擺弧在端點持續時間</div>
+                                    <div class="value">1</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic flex-column border">
+                            <div class="topic-title">送線參數</div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">送線起始延遲時間</div>
+                                    <div class="value">1</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">送線速度</div>
+                                    <div class="value">100</div>
+                                    <div class="unit">( cm/s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">送線長度</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( mm )</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-bar flex-row">
+            <div class="flex-row" id="menu">
+                <a href="02-1-KTIG-cn.html">
+                    <div class="button">K-TIG</div>
+                </a>
+                <a href="02-2-TIG-cn.html">
+                    <div class="button bgc-blue">TIG</div>
+                </a>
+                <a href="02-3-PLASMA-cn.html">
+                    <div class="button">PLASMA</div>
+                </a>
+                <a href="02-4-Other-cn.html">
+                    <div class="button">Other</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

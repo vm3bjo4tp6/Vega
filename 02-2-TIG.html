@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet0.css">
+    <link rel="stylesheet" href="stylesheet2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page flex-column" id="Setting-page">
+        <div class="menu-bar flex-row">
+            <div class="flex-row" id="menu">
+                <a href="01-Home.html">
+                    <div class="button">Home</div>
+                </a>
+                <a href="05-Manual.html">
+                    <div class="button">Manual</div>
+                </a>
+                <a href="02-2-TIG.html">
+                    <div class="button bgc-blue">Setting</div>
+                </a>
+                <a href="03-IO.html">
+                    <div class="button">IO</div>
+                </a>
+                <a href="04-ErrorMsg.html">
+                    <div class="button">ErrorMsg</div>
+                </a>
+            </div>
+            <div class="flex-row" id="language">
+                <a href="02-2-TIG-cn.html">
+                    <div class="button">中文</div>
+                </a>
+                <a href="02-2-TIG.html">
+                    <div class="button">English</div>
+                </a>
+            </div>
+        </div>
+        <div class="status-bar flex-row">
+            <div class="indicator-label bgc-green">Motion</div>
+            <div class="indicator-label bgc-green">K-TIG Water Flow</div>
+            <div class="indicator-label bgc-yellow">TIG Water Flow</div>
+            <div class="indicator-label bgc-green">PLASMA Water Flow</div>
+            <div class="indicator-label bgc-red">Inner Camera Water Flow</div>
+            <div class="indicator-label bgc-green">Cooling Water Temperature</div>
+        </div>
+        <div class="main-panel flex-column">
+            <div class="theme flex-row border" id="TIG">
+                <div class="panel flex-column">
+                    <div class="theme-title">TIG</div>
+                    <div class="panel flex-column">
+                        <div class="topic flex-column border">
+                            <div class="topic-title">Ignition Parameter</div>
+                            <div class="image">
+                                <img src="IgnitionChart.png" alt="" class="img" fill>
+                            </div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">Start Current Value(A1)</div>
+                                    <div class="value">100</div>
+                                    <div class="unit">( A )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">End Current Value(A2)</div>
+                                    <div class="value">200</div>
+                                    <div class="unit">( A )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Keep Start Current Time(T1)</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Keep End Current Time(T5)</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Current Rise Time(T2)</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Current Drop Time(T4)</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Success Igition Current Value</div>
+                                    <div class="value">500</div>
+                                    <div class="unit">( A )</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic flex-column border">
+                            <div class="topic-title">Cooling Water</div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">Water Flow Warnning Value</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( L/Min )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Water Flow Dangerous Value</div>
+                                    <div class="value">8</div>
+                                    <div class="unit">( L/Min )</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic flex-column border">
+                            <div class="topic-title">Weaver</div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">Weaver Width</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( mm )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Weaver Speed</div>
+                                    <div class="value">15</div>
+                                    <div class="unit">( mm/s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Stay At Endpoint Time</div>
+                                    <div class="value">1</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic flex-column border">
+                            <div class="topic-title">Wire Feeder</div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">Start Delay Time</div>
+                                    <div class="value">1</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Wire Feeder Speed</div>
+                                    <div class="value">100</div>
+                                    <div class="unit">( cm/s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Wire Feeder Length</div>
+                                    <div class="value">5</div>
+                                    <div class="unit">( mm )</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topic flex-column border">
+                            <div class="topic-title">Pulse Control</div>
+                            <div class="display-panel flex-row flex-wrap">
+                                <div class="item flex-row border-item">
+                                    <div class="name">Pulse Frequency</div>
+                                    <div class="value">60</div>
+                                    <div class="unit">( Hz )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Pulse Current</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( A )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">High Frequency Period</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                                <div class="item flex-row border-item">
+                                    <div class="name">Low Frequency Period</div>
+                                    <div class="value">10</div>
+                                    <div class="unit">( s )</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu-bar flex-row">
+            <div class="flex-row" id="menu">
+                <a href="02-1-KTIG.html">
+                    <div class="button">K-TIG</div>
+                </a>
+                <a href="02-2-TIG.html">
+                    <div class="button bgc-blue">TIG</div>
+                </a>
+                <a href="02-3-PLASMA.html">
+                    <div class="button">PLASMA</div>
+                </a>
+                <a href="02-4-Other.html">
+                    <div class="button">Other</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

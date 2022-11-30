@@ -1,0 +1,110 @@
+.main-panel{
+    flex-grow: 1;
+}
+/* 主題 */
+.theme{
+    height: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+}
+.theme .camera{
+    width: calc(var(--page-width) - var(--theme-panel-width));
+    margin-right: 10px;
+    background-color: blue;
+}
+.theme .panel{
+    width: var(--theme-panel-width);
+    height: 100%;
+}
+.theme .theme-title{
+    margin-bottom: 4px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    background-color: aqua;
+}
+.theme .display-panel{
+    margin-bottom: auto;
+    width: 100%;
+}
+.theme .control-panel{
+    width: 100%;
+}
+
+/* 顯示項目 */
+.item{
+    width: 100%;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+}
+.item .name{
+    width: 60%;
+    font-size: 20px;
+}
+.item .value{
+    color: blue;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+    width: 20%;
+}
+.item .unit{
+    width: 80px;
+    text-align: right;
+}
+
+/* 功能選單 */
+.function-group{
+    margin-top: 4px;
+}
+.function-group .function-name{
+    margin: 4px 0;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.function-group .button{
+    margin-right: 5px;
+    width: 96px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #1d1d1d;
+
+    background-color: #c2c2c2;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 方向鍵盤 */
+.direction-panel{
+    align-items: center;
+}
+.direction-panel .button{
+    margin-right: 5px;
+    width: 96px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #1d1d1d;
+
+    background-color: #c2c2c2;
+    font-size: 30px;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.direction-panel .flex-column{
+    height: 180px;
+    justify-content: space-around;
+}
+
+.direction-panel .button:active{
+    background-color: chartreuse !important; 
+}
