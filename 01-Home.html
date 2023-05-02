@@ -40,10 +40,7 @@
         </div>
         <div class="status-bar flex-row">
             <div class="indicator-label bgc-green">Motion</div>
-            <div class="indicator-label bgc-green">K-TIG Water Flow</div>
-            <div class="indicator-label bgc-yellow">TIG Water Flow</div>
-            <div class="indicator-label bgc-green">PLASMA Water Flow</div>
-            <div class="indicator-label bgc-red">Inner Camera Water Flow</div>
+            <div class="indicator-label bgc-green">Cooling Water Flow</div>
             <div class="indicator-label bgc-green">Cooling Water Temperature</div>
         </div>
         <div class="main-panel flex-column">
@@ -63,21 +60,34 @@
                             <div class="unit">( V )</div>
                         </div>
                         <div class="item flex-row border-item">
-                            <div class="name">Water Flow</div>
+                            <div class="name">Cooling Water Flow</div>
                             <div class="value">3</div>
                             <div class="unit">( L/Min )</div>
+                        </div>
+                        <div class="item flex-row border-item">
+                            <div class="name">Cooling Water Temperature</div>
+                            <div class="value">25</div>
+                            <div class="unit">( °C )</div>
                         </div>
                     </div>
                     <div class="control-panel flex-column">
                         <div class="function-group flex-column">
                             <div class="function-name">Melding Torch Movemnet Panel</div>
-                            <div class="direction-panel flex-row justtify-center">
-                                <div class="button">←</div>
-                                <div class="flex-column">
-                                    <div class="button">↑</div>
-                                    <div class="button">↓</div>
+                            <div class="direction-panel flex-row space-around">
+                                <div class="four-direct-panel flex-row">
+                                    <div class="button">←</div>
+                                    <div class="flex-column">
+                                        <div class="button">↑</div>
+                                        <div class="button">↓</div>
+                                    </div>
+                                    <div class="button">→</div>
                                 </div>
-                                <div class="button">→</div>
+                                <div class="two-direct-panel">
+                                    <div class="flex-column">
+                                        <div class="button">↑</div>
+                                        <div class="button">↓</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,24 +109,12 @@
                             <div class="unit">( V )</div>
                         </div>
                         <div class="item flex-row border-item">
-                            <div class="name">Water Flow</div>
-                            <div class="value">3</div>
-                            <div class="unit">( L/Min )</div>
-                        </div>
-                        <div class="item flex-row border-item">
                             <div class="name">Wire Feeder Speed</div>
                             <div class="value">3</div>
                             <div class="unit">( cm/Min )</div>
                         </div>
                     </div>
                     <div class="control-panel flex-column">
-                        <div class="function-group flex-column">
-                            <div class="function-name">Image Source</div>
-                            <div class="button-group flex-row">
-                                <div class="button bgc-green js-ratio-button">Origin</div>
-                                <div class="button js-ratio-button">Dark</div>
-                            </div>
-                        </div>
                         <div class="function-group flex-column">
                             <div class="function-name">Function Work/Unwork Switch Panel</div>
                             <div class="button-group flex-row">
@@ -128,13 +126,21 @@
                         </div>
                         <div class="function-group flex-column">
                             <div class="function-name">Melding Torch Movemnet Panel</div>
-                            <div class="direction-panel flex-row justtify-center">
-                                <div class="button">←</div>
-                                <div class="flex-column">
-                                    <div class="button">↑</div>
-                                    <div class="button">↓</div>
+                            <div class="direction-panel flex-row space-around">
+                                <div class="four-direct-panel flex-row">
+                                    <div class="button">←</div>
+                                    <div class="flex-column">
+                                        <div class="space"></div>
+                                        <div class="space"></div>
+                                    </div>
+                                    <div class="button">→</div>
                                 </div>
-                                <div class="button">→</div>
+                                <div class="two-direct-panel">
+                                    <div class="flex-column">
+                                        <div class="button">↑</div>
+                                        <div class="button">↓</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,16 +162,6 @@
                             <div class="unit">( V )</div>
                         </div>
                         <div class="item flex-row border-item">
-                            <div class="name">Water Flow</div>
-                            <div class="value">3</div>
-                            <div class="unit">( L/Min )</div>
-                        </div>
-                        <div class="item flex-row border-item">
-                            <div class="name">Camera Water Flow</div>
-                            <div class="value">3</div>
-                            <div class="unit">( L/Min )</div>
-                        </div>
-                        <div class="item flex-row border-item">
                             <div class="name">Glass Flow</div>
                             <div class="value">3</div>
                             <div class="unit">( L/Min )</div>
@@ -176,15 +172,20 @@
                             <div class="function-name">Function Work/Unwork Switch Panel</div>
                             <div class="button-group flex-row">
                                 <div class="button js-keep-button">PLASMA</div>
+                                <div class="button js-keep-button">PULSE</div>
                             </div>
                         </div>
                         <div class="function-group flex-column">
                             <div class="function-name">Melding Torch Movemnet Panel</div>
-                            <div class="direction-panel flex-row">
-                                <!-- <div class="flex-column"> -->
-                                    <div class="button">↑</div>
-                                    <div class="button">↓</div>
-                                <!-- </div> -->
+                            <div class="direction-panel flex-row space-around">
+                                <div class="four-direct-panel flex-row">
+                                </div>
+                                <div class="two-direct-panel">
+                                    <div class="flex-column">
+                                        <div class="button">↑</div>
+                                        <div class="button">↓</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

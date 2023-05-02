@@ -126,8 +126,11 @@ html, body, div, a, section{
     display: flex;
     flex-direction: column;
 }
-.justtify-center{
+.justify-center{
     justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
 }
 .border{
     border: 3px solid black;
