@@ -67,3 +67,23 @@
     width: 75px;
     text-align: right;
 }
+
+.item .button{
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #1d1d1d;
+
+    background-color: #c2c2c2;
+    font-size: 18px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .button:active{
+    background-color: greenyellow;
+}
