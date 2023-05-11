@@ -45,14 +45,14 @@
 
 /* 顯示項目 */
 .item{
-    width: 49%;
+    width: 100%;
     margin: 5px 5px;
     padding: 5px 5px;
     display: flex;
     align-items: center;
 }
 .item .name{
-    width: 270px;
+    width: 350px;
     font-size: 20px;
 }
 .item .value{
